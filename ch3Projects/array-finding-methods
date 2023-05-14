@@ -1,0 +1,21 @@
+// find() is a function that will execute on every element of the array UNTIL it finds a match.
+// if it doesn't find a match, it will return undefined
+// you put a function between the parentheses
+// ex: 
+// arr7 = [2, 6, 7, 8];
+// let findValue = arr7.find(function(e) {return e === 6});
+// let findValue2 = arr7.find(e => e === 10);
+// console.log(findValue, findValue2) will log 6, undefined
+// this function takes the element of the array and when the element of the array matches, it returns the element
+// to find the index of an element, you use indexOf()
+// arr8 = [1, 2, 3];
+// let findIndex = arr8.indexOf(2);
+// let findIndex2 = arr8.indexOf(10)
+// console.log(findIndex, findIndex2) will log 1, -1
+// -1 is returned because there is no 10 in arr8
+// if you want to find the next occurrence of a specified number,
+// add a second argument to indexOf()
+// arr8 = [1, 2, 3, 4, 5, 1];
+// let findIndex = arr8.indexOf(1, 2) <find the index of 1 after the index 2
+// console.log(findIndex) will log 5
+// to find the last index of something is lastIndexOf(element)

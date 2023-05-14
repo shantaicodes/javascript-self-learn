@@ -1,0 +1,11 @@
+// remove the last element 
+// arr1.pop() will remove the last element and also return it
+// arr.shift() will remove the first element and also return it
+// arr.splice(elementsAfterThisIndex, thisManyElements) will delete stuff
+// ex:
+// arr1 = [1, 2, 3, 4, 5, 6];
+// arr1.splice(2, 2);
+// console.log(arr1) will log [1, 2, 3, 6]
+// delete will change the value of a certain position of array to undefined
+// ex delete arr8[0] ===> [<1 empty item>, 2, 3, 4] <== this is useful if you're relying on index or length for some reason
+
