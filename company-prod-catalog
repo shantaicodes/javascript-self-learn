@@ -1,0 +1,32 @@
+// company product catalog project 
+// create array to hold inventory of store items
+const storeItems = [];
+let item1 = {
+    name: "Boombox",
+    model: "X60",
+    cost: 80,
+    quantity: 10
+};
+
+let item2 = {
+    name: "Lamp",
+    model: "AB",
+    cost: 40,
+    quantity: 25
+};
+
+let item3 = {
+    name: "Laptop",
+    model: "IS20",
+    cost: 500,
+    quantity: 42
+};
+
+storeItems.push(item1, item2, item3);
+let quantity = "quantity";
+console.log(storeItems[2]);
+console.log(storeItems[2][quantity]);
+item3["color"]="blue";
+console.log(item3["color"]);
+console.log(storeItems[2]);
+console.log(storeItems[1].model);
