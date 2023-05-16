@@ -1,0 +1,26 @@
+// create empty array to use as shopping list
+let shoppingList = [];
+// add milk, bread, and apples to list
+shoppingList.push("milk", "bread", "apple");
+// update bread with bananas and eggs
+shoppingList.splice(1, 1, "bananas", "eggs");
+// remove the last item from the array and output it to the console
+let lastItem = shoppingList.pop();
+console.log(lastItem);
+// sort the list alphabetically
+shoppingList.sort();
+console.log(shoppingList);
+// find and output the index value of milk
+let milkIndex = shoppingList.indexOf("milk");
+console.log(milkIndex);
+// after bananas, add carrots and lettuce
+shoppingList.splice(1, 0, "carrots", "lettuce");
+console.log(shoppingList);
+// create a new list with juice and pop
+let drinkList = ["juice", "pop"];
+// add the new list twice to the first list
+shoppingList = shoppingList.concat(drinkList, drinkList);
+console.log(shoppingList);
+// get the last index value of pop and output it to the console
+let lastPop = shoppingList.indexOf("pop",7);
+console.log(lastPop);
