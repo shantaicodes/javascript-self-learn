@@ -1,0 +1,11 @@
+let userAge = Number(prompt("Enter your age: "));
+let message = "";
+if (userAge >= 21){
+    message = "You can get in, and you can have a drink or two.";
+}else if (userAge >= 19){
+    message = "You can get it, but only water for you!";
+}else{
+    message = "No way you're getting in.";
+};
+
+console.log(message);
