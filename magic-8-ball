@@ -1,0 +1,56 @@
+// practice exercise 4.4
+
+function main(){
+    let randomNum = 0;
+    let userQuery = "";
+    let answer = "";
+
+    randomNum = getNumber();
+    userQuery = getQuestion();
+    answer = getAnswer(randomNum);
+    printResults(userQuery, answer);
+    console.log("Goodbye!");
+};
+
+// set a variable that will hold a random number between 0 and 6, not including 6
+function getNumber(){
+    return Math.floor(Math.random()*6);
+};
+
+// create a prompt to get a string from user
+
+function getQuestion(){
+    return prompt("Enter your question: ");
+};
+
+
+// create 6 responses using a switch statement
+function getAnswer(randomNum){
+    switch(randomNum){
+        case 0:
+            return "Maybe next time.";
+            break;
+        case 1:
+            return "For sure!";
+            break;
+        case 2:
+            return "The future is unclear.";
+            break;
+        case 3:
+            return "If you keep your hopes up, what you desire will be yours.";
+            break;
+        case 4:
+            return "A definite no.";
+            break;
+        case 5:
+            return "Is this really what you want?";
+            break;
+    };
+};
+
+
+// output the user's question and the answer
+function printResults(question, answer){
+    console.log(question);
+    console.log(answer);
+};
